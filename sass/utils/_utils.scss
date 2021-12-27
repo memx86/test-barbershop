@@ -1,0 +1,41 @@
+%title {
+  font-family: Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--title-cl);
+}
+%subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--title-cl);
+}
+%button {
+  display: block;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-cl);
+  border-radius: 25px;
+  cursor: pointer;
+}
+%section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @include mq(tablet-only) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include mq(desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
