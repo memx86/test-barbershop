@@ -6,7 +6,7 @@
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url(../images/hero/img3-s.jpg);
+    url("../images/hero/img3-s.jpg");
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
@@ -17,12 +17,12 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../images/hero/img3@2x-s.jpg);
+      url("../images/hero/img3@2x-s.jpg");
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      -webkit-image-set(url("../images/hero/img3@2x-s.webp") 2x);
+      -webkit-image-set(url("../images/hero/img3-s@2x.webp") 2x);
   }
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../images/hero/img3-m.jpg);
+      url("../images/hero/img3-m.jpg");
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
@@ -46,12 +46,12 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url(../images/hero/img3@2x-m.jpg);
+        url("../images/hero/img3@2x-m.jpg");
       background-image: linear-gradient(
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        -webkit-image-set(url("../images/hero/img3@2x-m.webp") 2x);
+        -webkit-image-set(url("../images/hero/img3-m@2x.webp") 2x);
     }
   }
   @include mq(desktop) {
@@ -62,7 +62,7 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../images/hero/img3-l.jpg);
+      url("../images/hero/img3-l.jpg");
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
@@ -73,12 +73,12 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url(../images/hero/img3@2x-l.jpg);
+        url("../images/hero/img3@2x-l.jpg");
       background-image: linear-gradient(
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        -webkit-image-set(url("../images/hero/img3@2x-l.webp") 2x);
+        -webkit-image-set(url("../images/hero/img3-l@2x.webp") 2x);
     }
   }
 }

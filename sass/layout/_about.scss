@@ -41,6 +41,9 @@
 }
 .about__title {
   @extend %title;
+  @include mq(tablet-only) {
+    font-size: 28px;
+  }
 }
 .about__text {
   margin-bottom: 20px;
