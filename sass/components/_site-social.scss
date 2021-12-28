@@ -23,3 +23,6 @@
     }
   }
 }
+.site-social__link {
+  @extend %link;
+}

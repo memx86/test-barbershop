@@ -13,12 +13,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 250ms linear;
-  &:hover,
-  &:focus {
-    color: var(--accent-cl);
-    outline: none;
-  }
 }
 ul {
   list-style: none;

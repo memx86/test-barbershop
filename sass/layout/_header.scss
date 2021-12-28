@@ -1,5 +1,7 @@
 .header {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
   padding-top: 40px;
   padding-bottom: 27px;
@@ -29,13 +31,16 @@
     align-self: flex-start;
     color: var(--title-cl);
   }
-  @include mq(tablet) {
-    width: 65px;
-    height: 55px;
-  }
   @include mq(desktop) {
     margin-right: 70px;
     color: var(--title-cl);
+  }
+}
+.header__icon {
+  display: block;
+  @include mq(tablet) {
+    width: 65px;
+    height: 55px;
   }
 }
 .header__nav {
@@ -54,7 +59,7 @@
   }
 }
 .header__link {
-  display: block;
+  @extend %link;
   padding-top: 13px;
   padding-bottom: 13px;
 }
@@ -129,6 +134,9 @@
     pointer-events: all;
     visibility: visible;
   }
+  @include mq(tablet) {
+    display: none;
+  }
 }
 .mobile-menu {
   padding: 118px 40px;
@@ -154,6 +162,7 @@
   }
 }
 .mobile-menu__link {
+  @extend %link;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.39;
