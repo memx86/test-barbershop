@@ -41,7 +41,7 @@
 }
 .about__title {
   @extend %title;
-  @include mq(tablet-only) {
+  @include mq(not-desktop) {
     font-size: 28px;
   }
 }
