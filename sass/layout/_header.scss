@@ -15,7 +15,6 @@
     padding-bottom: 44px;
   }
   color: var(--main-light-cl);
-  background-color: var(--placeholder-color);
 }
 .header__container {
   display: flex;
@@ -26,7 +25,9 @@
   color: var(--main-light-cl);
   @include mq(tablet-only) {
     margin-left: 10px;
-    margin-right: 40px;
+    margin-right: 70px;
+    align-self: flex-start;
+    color: var(--title-cl);
   }
   @include mq(tablet) {
     width: 65px;
@@ -166,4 +167,5 @@
 .mobile-menu__site-social {
   gap: 24px;
   flex-direction: column;
+  font-size: 14px;
 }

@@ -1,10 +1,137 @@
 .hero {
   @extend %section;
   padding-top: 208px;
+  padding-bottom: 183px;
   @include mq(tablet) {
+    position: relative;
+  }
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/hero/img3-s.jpg);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    -webkit-image-set(url("../images/hero/img3-s.webp") 1x);
+  @include mq(retina) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../images/hero/img3@2x-s.jpg);
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      -webkit-image-set(url("../images/hero/img3@2x-s.webp") 2x);
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 480px 580px;
+  @include mq(tablet-only) {
     padding-top: 280px;
+    padding-bottom: 237px;
+    background-position: left calc(50% + 58px) top;
+    background-size: 576px 680px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../images/hero/img3-m.jpg);
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      -webkit-image-set(url("../images/hero/img3-m.webp") 1x);
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../images/hero/img3@2x-m.jpg);
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        -webkit-image-set(url("../images/hero/img3@2x-m.webp") 2x);
+    }
   }
   @include mq(desktop) {
     padding-top: 272px;
+    padding-bottom: 181px;
+    background-position: left calc(50% + 48px) top;
+    background-size: 1073px 680px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../images/hero/img3-l.jpg);
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      -webkit-image-set(url("../images/hero/img3-l.webp") 1x);
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../images/hero/img3@2x-l.jpg);
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        -webkit-image-set(url("../images/hero/img3@2x-l.webp") 2x);
+    }
+  }
+}
+.hero__container {
+  @include mq(tablet-only) {
+    padding-left: 184px;
+  }
+  @include mq(desktop) {
+    padding-left: 209px;
+  }
+}
+.hero__subtitle {
+  @extend %subtitle;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero__title {
+  @extend %title;
+  font-size: 48px;
+  color: var(--main-light-cl);
+  @include mq(desktop) {
+    font-size: 72px;
+  }
+}
+.hero__text {
+  max-width: 306px;
+  font-size: 16px;
+  line-height: 1.62;
+  @include mq(tablet-only) {
+    max-width: 349px;
+  }
+  @include mq(desktop) {
+    max-width: 400px;
+    font-size: 18px;
+  }
+}
+.hero__site-social {
+  display: none;
+  @include mq(tablet) {
+    --to-center: 302px;
+    display: flex;
+    position: absolute;
+    left: calc(50% - 7px - var(--to-center));
+    bottom: 40px;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    color: var(--title-cl);
+  }
+  @include mq(desktop) {
+    --to-center: 554px;
   }
 }
