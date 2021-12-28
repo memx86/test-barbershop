@@ -1,7 +1,7 @@
 .container {
   max-width: 448px;
   @include mq(tablet-only) {
-    max-width: 660x;
+    max-width: 660px;
   }
   @include mq(desktop) {
     max-width: 1200px;

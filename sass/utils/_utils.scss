@@ -16,16 +16,24 @@
 }
 %button {
   display: block;
-  padding: 12px 20px;
+  padding: 11px 20px;
   font-family: inherit;
   font-size: 12px;
   line-height: 1.33;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: inherit;
+  background-color: transparent;
   border: 1px solid var(--accent-cl);
   border-radius: 25px;
   cursor: pointer;
+  transition: background-color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+    outline: none;
+  }
 }
 %section {
   padding-top: 84px;

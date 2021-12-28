@@ -1,0 +1,25 @@
+.site-social {
+  padding-left: 100px;
+  display: flex;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--title-cl);
+}
+.site-social__item {
+  display: flex;
+  align-items: center;
+  &:first-child {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100px;
+      top: 50%;
+      width: 60px;
+      height: 1px;
+      background-color: var(--title-cl);
+    }
+  }
+}

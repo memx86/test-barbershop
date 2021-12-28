@@ -19,8 +19,103 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="container header__container">
+        <svg class="header__logo" width="69" height="55">
+          <use href="images/sprite.svg#logo"></use>
+        </svg>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="">О нас</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="">Услуги и цены</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="">Мастера</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__wrapper">
+            <button type="button" class="header__button">онлайн-запись</button>
+            <a class="header__link" href="tel:+380441111111">
+              +38 044 111 11 11
+            </a>
+          </div>
+        </nav>
+
+        <!-- кнопка-бургер -->
+        <button
+          class="burger__button"
+          type="button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <span class="burger__item burger__item--top"></span>
+          <span class="burger__item burger__item--center"></span>
+          <span class="burger__item burger__item--bottom"></span>
+        </button>
+
+        <!-- мобильное меню -->
+        <div class="backdrop" data-menu>
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">О нас</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Услуги и цены</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Мастера</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__contacts">
+              <a class="mobile-menu__link" href="tel:+380441111111">
+                +38 044 111 11 11
+              </a>
+              <button type="button" class="mobile-menu__button">
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="mobile-menu__site-social site-social">
+              <li class="site-social__item">
+                <a
+                  class="site-social__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="site-social__item">
+                <a
+                  class="site-social__link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Youtube
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <hero class="hero">
+        <div class="container"></div>
+      </hero>
+    </main>
     <!-- Footer -->
     <footer class="footer"></footer>
     <script src="./js/menu.js"></script>

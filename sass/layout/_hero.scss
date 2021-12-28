@@ -1,0 +1,10 @@
+.hero {
+  @extend %section;
+  padding-top: 208px;
+  @include mq(tablet) {
+    padding-top: 280px;
+  }
+  @include mq(desktop) {
+    padding-top: 272px;
+  }
+}
