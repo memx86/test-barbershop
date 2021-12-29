@@ -31,20 +31,20 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="">О нас</a>
+              <a class="header__link" href="#about">О нас</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="">Услуги и цены</a>
+              <a class="header__link" href="#prices">Услуги и цены</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="">Мастера</a>
+              <a class="header__link" href="#masters">Мастера</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="">Контакты</a>
+              <a class="header__link" href="#contacts">Контакты</a>
             </li>
           </ul>
           <div class="header__wrapper">
-            <button type="button" class="header__button">онлайн-запись</button>
+            <a class="header__button" href="#sign">онлайн-запись</a>
             <a class="header__link" href="tel:+380441111111">
               +38 044 111 11 11
             </a>
@@ -68,25 +68,33 @@
           <div class="mobile-menu">
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="">О нас</a>
+                <a class="mobile-menu__link" href="#about" data-mobile-link
+                  >О нас
+                </a>
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="">Услуги и цены</a>
+                <a class="mobile-menu__link" href="#prices" data-mobile-link
+                  >Услуги и цены
+                </a>
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="">Мастера</a>
+                <a class="mobile-menu__link" href="#masters" data-mobile-link
+                  >Мастера
+                </a>
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="">Контакты</a>
+                <a class="mobile-menu__link" href="#contacts" data-mobile-link
+                  >Контакты
+                </a>
               </li>
             </ul>
             <div class="mobile-menu__contacts">
               <a class="mobile-menu__link" href="tel:+380441111111">
                 +38 044 111 11 11
               </a>
-              <button type="button" class="mobile-menu__button">
+              <a class="mobile-menu__button" href="#sign" data-mobile-link>
                 онлайн-запись
-              </button>
+              </a>
             </div>
             <!-- Site-social -->
             <ul class="mobile-menu__site-social site-social">
@@ -155,7 +163,7 @@
         </div>
       </section>
       <!-- About -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__container container">
           <div class="about__aside">
             <picture>
@@ -257,12 +265,12 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="about__button" type="button">онлайн-запись</button>
+            <a class="about__button" href="#sign">онлайн-запись</a>
           </div>
         </div>
       </section>
       <!-- Prices   -->
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="container">
           <p class="prices__subtitle">
             Проведи время в компании лучших мастеров
@@ -306,7 +314,7 @@
               </li>
             </ul>
           </div>
-          <button class="prices__button" type="button">онлайн-запись</button>
+          <a class="prices__button" href="#sign">онлайн-запись</a>
         </div>
       </section>
       <!-- Features -->
@@ -343,7 +351,7 @@
         </div>
       </section>
       <!-- Masters -->
-      <section class="masters">
+      <section class="masters" id="masters">
         <div class="masters__container container">
           <p class="masters__subtitle">для настоящих ценителей атмосферы</p>
           <h2 class="masters__title">Наши мастера</h2>

@@ -1,14 +1,19 @@
 .sign {
   @extend %section;
-  background-color: #191c26;
   text-align: center;
+  background-image: linear-gradient(#111319, #111319);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 480px 557px;
   @include mq(tablet) {
     text-align: unset;
+    background-size: 768px 521px;
   }
   @include mq(desktop) {
     padding-left: 40px;
     padding-right: 25px;
     max-width: 655px;
+    background: #111319;
   }
 }
 .sign__title {
