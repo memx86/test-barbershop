@@ -15,6 +15,9 @@
   @extend %title;
   margin-bottom: 44px;
   color: var(--main-light-cl);
+  @include mq(s-mobile) {
+    font-size: calc(18px + 5vw);
+  }
 }
 .sign__form {
   @include mq(tablet) {
@@ -28,6 +31,7 @@
   }
 }
 .sign__label {
+  display: block;
   margin-bottom: 44px;
   @include mq(tablet) {
     margin-bottom: unset;

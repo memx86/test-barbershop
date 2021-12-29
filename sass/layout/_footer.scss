@@ -1,0 +1,20 @@
+.footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.footer__container {
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.footer__site-social {
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 270px;
+  @include mq(tablet) {
+    margin-bottom: unset;
+    margin-left: unset;
+  }
+}
