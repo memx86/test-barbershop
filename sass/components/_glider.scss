@@ -17,11 +17,6 @@
     height: 680px;
   }
 }
-.glider-slide {
-  @include mq(desktop) {
-    padding-left: 1px;
-  }
-}
 .glider-controls {
   display: none;
   position: absolute;

@@ -241,12 +241,6 @@ svg {
   }
 }
 
-@media (min-width: 1280px) {
-  .glider-slide {
-    padding-left: 1px;
-  }
-}
-
 .glider-controls {
   display: none;
   position: absolute;
