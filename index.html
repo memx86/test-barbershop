@@ -949,6 +949,91 @@
           </ul>
         </div>
       </section>
+      <div class="wrapper">
+        <!-- Sign -->
+        <section class="sign" id="sign">
+          <div class="container">
+            <h2 class="sign__title">Онлайн-запись</h2>
+            <form class="sign__form" autocomplete="off">
+              <label class="sign__label">
+                <input
+                  class="sign__input"
+                  type="text"
+                  name="name"
+                  placeholder="Имя*"
+                  title="Имя*"
+                  required
+                />
+              </label>
+              <label class="sign__label">
+                <input
+                  class="sign__input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Телефон*"
+                  title="Телефон*"
+                  required
+                />
+              </label>
+              <label class="sign__label sign__label--textarea">
+                <textarea
+                  class="sign__input sign__input--textarea"
+                  type="text"
+                  name="message"
+                  placeholder="Сообщение"
+                ></textarea>
+              </label>
+              <button class="sign__button" type="submit">отправить</button>
+            </form>
+          </div>
+        </section>
+        <!-- Contacts -->
+        <section class="contacts" id="contacts">
+          <div class="contacts__container container">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="contacts__address">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="https://goo.gl/maps/ZZ766NZj3NoqfMpMA"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#map-pin"></use>
+                    </svg>
+                    ул. Васильковая, 7А, Киев, 08132
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:+380441111111">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--email"
+                    href="mailto:barbershop@email.com"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="contacts__wrapper">
+              <p class="contacts__subtitle">время работы</p>
+              <p class="contacts__time">Ежедневно с 9:00 до 22:00</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="footer"></footer>

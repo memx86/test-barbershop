@@ -1,0 +1,78 @@
+.sign {
+  @extend %section;
+  background-color: #191c26;
+  text-align: center;
+  @include mq(tablet) {
+    text-align: unset;
+  }
+  @include mq(desktop) {
+    padding-left: 40px;
+    padding-right: 25px;
+    max-width: 655px;
+  }
+}
+.sign__title {
+  @extend %title;
+  margin-bottom: 44px;
+  color: var(--main-light-cl);
+}
+.sign__form {
+  @include mq(tablet) {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 44px;
+    grid-template-columns: 330px 330px;
+  }
+  @include mq(desktop) {
+    grid-template-columns: 270px 260px;
+  }
+}
+.sign__label {
+  margin-bottom: 44px;
+  @include mq(tablet) {
+    margin-bottom: unset;
+  }
+}
+.sign__label--textarea {
+  @include mq(tablet) {
+    grid-column: 1 / 3;
+  }
+}
+.sign__input {
+  display: block;
+  padding: 0 0 8px 0;
+  width: 100%;
+  font-size: 11px;
+  line-height: 1.36;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--main-light-cl);
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  &::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+    text-transform: uppercase;
+  }
+  &:focus,
+  &:not(:placeholder-shown) {
+    outline: none;
+    border-bottom: 1px solid var(--main-light-cl);
+  }
+}
+.sign__input--textarea {
+  min-height: 76px;
+  resize: none;
+}
+.sign__button {
+  @extend %button;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--main-light-cl);
+  @include mq(tablet) {
+    grid-column: 1 / 2;
+    margin-left: unset;
+  }
+}
