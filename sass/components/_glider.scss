@@ -92,18 +92,39 @@
   }
 }
 .glider-dot {
+  display: block;
   margin: unset;
-  &:not(:last-child) {
-    margin-bottom: 12px;
-  }
-  width: 8px;
-  height: 2px;
-  background-color: var(--main-text-cl);
+  width: 14px;
+  height: 14px;
   border-radius: unset;
   transform-origin: right;
-  transition: transform 250ms linear, background-color 250ms linear;
+  background-color: transparent;
+  transition: transform 250ms linear;
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    left: 6px;
+    width: 8px;
+    height: 2px;
+    background-color: var(--main-text-cl);
+    transition: background-color 250ms linear;
+  }
+  &:hover,
+  &:focus {
+    background-color: unset;
+    transform: scaleX(1.2);
+  }
   &.active {
+    background-color: transparent;
     transform: scaleX(1.5);
-    background-color: var(--main-light-cl);
+    &::before {
+      background-color: var(--main-light-cl);
+    }
+    &:hover,
+    &:focus {
+      transform: scaleX(1.7);
+    }
   }
 }

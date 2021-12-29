@@ -350,27 +350,52 @@ svg {
 }
 
 .glider-dot {
+  display: block;
   margin: unset;
-  width: 8px;
-  height: 2px;
-  background-color: var(--main-text-cl);
+  width: 14px;
+  height: 14px;
   border-radius: unset;
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: background-color 250ms linear, -webkit-transform 250ms linear;
-  transition: background-color 250ms linear, -webkit-transform 250ms linear;
-  transition: transform 250ms linear, background-color 250ms linear;
-  transition: transform 250ms linear, background-color 250ms linear, -webkit-transform 250ms linear;
+  background-color: transparent;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
-.glider-dot:not(:last-child) {
-  margin-bottom: 12px;
+.glider-dot::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  left: 6px;
+  width: 8px;
+  height: 2px;
+  background-color: var(--main-text-cl);
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.glider-dot:hover, .glider-dot:focus {
+  background-color: unset;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
 }
 
 .glider-dot.active {
+  background-color: transparent;
   -webkit-transform: scaleX(1.5);
           transform: scaleX(1.5);
+}
+
+.glider-dot.active::before {
   background-color: var(--main-light-cl);
+}
+
+.glider-dot.active:hover, .glider-dot.active:focus {
+  -webkit-transform: scaleX(1.7);
+          transform: scaleX(1.7);
 }
 
 .socials {
