@@ -1,0 +1,26 @@
+.portfolio {
+  @extend %section;
+}
+.portfolio__subtitle {
+  @extend %subtitle;
+  margin-bottom: 44px;
+  color: var(--title-cl);
+}
+.portfolio__list {
+  display: grid;
+  gap: 30px;
+  @include mq(tablet-only) {
+    grid-template-columns: 330px 330px;
+  }
+  @include mq(desktop) {
+    grid-template-columns: repeat(4, 270px);
+  }
+}
+.portfolio__img {
+  @include mq(tablet-only) {
+    width: 330px;
+  }
+  @include mq(desktop) {
+    width: 270px;
+  }
+}
