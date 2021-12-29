@@ -1,36 +1,47 @@
 .prices {
   @extend %section;
-  background-color: #111319;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../images/prices/img-s.png");
-  background-image: -webkit-image-set(url("../images/prices/img-s.webp") 1x);
+  background-image: url("../images/prices/img-s.png"),
+    linear-gradient(#111319, #111319);
+  background-image: -webkit-image-set(url("../images/prices/img-s.webp") 1x),
+    linear-gradient(#111319, #111319);
   @include mq(retina) {
-    background-image: url("../images/prices/img-s@2x.png");
+    background-image: url("../images/prices/img-s@2x.png"),
+      linear-gradient(#111319, #111319);
     background-image: -webkit-image-set(
-      url("../images/prices/img-s@2x.webp") 2x
-    );
+        url("../images/prices/img-s@2x.webp") 2x
+      ),
+      linear-gradient(#111319, #111319);
   }
   background-size: 480px 826px;
   @include mq(tablet-only) {
-    background-image: url("../images/prices/img-m.png");
-    background-image: -webkit-image-set(url("../images/prices/img-m.webp") 1x);
+    background-image: url("../images/prices/img-m.png"),
+      linear-gradient(#111319, #111319);
+    background-image: -webkit-image-set(url("../images/prices/img-m.webp") 1x),
+      linear-gradient(#111319, #111319);
     @include mq(retina) {
-      background-image: url("../images/prices/img-m@2x.png");
+      background-image: url("../images/prices/img-m@2x.png"),
+        linear-gradient(#111319, #111319);
       background-image: -webkit-image-set(
-        url("../images/prices/img-m@2x.webp") 2x
-      );
+          url("../images/prices/img-m@2x.webp") 2x
+        ),
+        linear-gradient(#111319, #111319);
     }
     background-size: 768px 858px;
   }
   @include mq(desktop) {
-    background-image: url("../images/prices/img-l.png");
-    background-image: -webkit-image-set(url("../images/prices/img-l.webp") 1x);
+    background-image: url("../images/prices/img-l.png"),
+      linear-gradient(#111319, #111319);
+    background-image: -webkit-image-set(url("../images/prices/img-l.webp") 1x),
+      linear-gradient(#111319, #111319);
     @include mq(retina) {
-      background-image: url("../images/prices/img-l@2x.png");
+      background-image: url("../images/prices/img-l@2x.png"),
+        linear-gradient(#111319, #111319);
       background-image: -webkit-image-set(
-        url("../images/prices/img-l@2x.webp") 2x
-      );
+          url("../images/prices/img-l@2x.webp") 2x
+        ),
+        linear-gradient(#111319, #111319);
     }
     background-size: 1280px 718px;
   }
