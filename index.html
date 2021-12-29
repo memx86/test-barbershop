@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/glider.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -161,6 +162,151 @@
             </p>
           </div>
         </div>
+        <!-- Glider -->
+        <div class="glider-contain">
+          <div class="glider">
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/img3-l.webp    1x,
+                    ./images/hero/img3-l@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img3-l.jpg    1x,
+                    ./images/hero/img3-l@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img3-m.webp    1x,
+                    ./images/hero/img3-m@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img3-m.jpg    1x,
+                    ./images/hero/img3-m@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                />
+                <img
+                  class="glider__img"
+                  src="./images/hero/img3-s.jpg"
+                  alt=""
+                  width="480"
+                  height="580"
+                />
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/img2-l.webp    1x,
+                    ./images/hero/img2-l@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img2-l.jpg    1x,
+                    ./images/hero/img2-l@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img2-m.webp    1x,
+                    ./images/hero/img2-m@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img2-m.jpg    1x,
+                    ./images/hero/img2-m@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                />
+                <img
+                  class="glider__img"
+                  src="./images/hero/img2-s.jpg"
+                  alt=""
+                  width="480"
+                  height="580"
+                />
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/img1-l.webp    1x,
+                    ./images/hero/img1-l@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img1-l.jpg    1x,
+                    ./images/hero/img1-l@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img1-m.webp    1x,
+                    ./images/hero/img1-m@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./images/hero/img1-m.jpg    1x,
+                    ./images/hero/img1-m@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                />
+                <img
+                  class="glider__img"
+                  src="./images/hero/img1-s.jpg"
+                  alt=""
+                  width="480"
+                  height="580"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="glider-controls">
+          <button aria-label="Previous" class="glider-controls__prev">
+            <span class="glider-controls__text">Наза</span>
+            д
+          </button>
+          <button aria-label="Next" class="glider-controls__next">
+            <span class="glider-controls__text">Впере</span>
+            д
+          </button>
+        </div>
+        <div class="glider__dots" role="tablist"></div>
       </section>
       <!-- About -->
       <section class="about" id="about">
@@ -713,6 +859,7 @@
           <p class="portfolio__subtitle">
             На латинском языке “барба” означает “борода”
           </p>
+          <h2 class="visually-hidden">Портфолио</h2>
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <picture>
@@ -986,7 +1133,6 @@
               <label class="sign__label sign__label--textarea">
                 <textarea
                   class="sign__input sign__input--textarea"
-                  type="text"
                   name="message"
                   placeholder="Сообщение"
                 ></textarea>
@@ -1079,5 +1225,7 @@
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/glider.min.js"></script>
+    <script src="./js/glider.js"></script>
   </body>
 </html>

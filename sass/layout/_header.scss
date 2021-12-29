@@ -88,7 +88,7 @@
   padding: 0;
   background-color: inherit;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
   overflow: hidden;
   @include mq(tablet) {
     display: none;
@@ -120,6 +120,7 @@
 }
 .backdrop {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;
