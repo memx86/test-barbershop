@@ -1,9 +1,8 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  const mobileLinks = document.querySelectorAll("[data-mobile-link]");
 
-  const doMagic = () => {
+  const onMobileMenuClick = () => {
     const expanded =
       menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
@@ -14,8 +13,13 @@
     document.body.classList.toggle("modal-open");
   };
 
-  menuBtnRef.addEventListener("click", doMagic);
-  for (const link of mobileLinks) {
-    link.addEventListener("click", doMagic);
-  }
+  const onMobileMenuLinkClick = (event) => {
+    if (!event.target.hasAttribute("data-mobile-link")) {
+      return;
+    }
+    onMobileMenuClick();
+  };
+
+  menuBtnRef.addEventListener("click", onMobileMenuClick);
+  mobileMenuRef.addEventListener("click", onMobileMenuLinkClick);
 })();
